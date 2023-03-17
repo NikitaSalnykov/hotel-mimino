@@ -17,43 +17,87 @@
 <body>
 
   <!-- Header -->
-  <header class="header">
+  <header class="header header-underline">
     <div class="container">
       <div class="pc-menu-container">
-        <nav>
-          <ul>
+        <nav class="pc-menu-navigation">
+          <ul class="pc-menu-list">
             <li><a href="">Home</a></li>
             <li><a href="">Hotel</a></li>
             <li><a href="">Restaurant</a></li>
           </ul>
         </nav>
-        <div class="logo">
-          <p>Mimino</p>
-          <p>restaurant-hotel complex</p>
-        </div>
-        <address>
-          <ul>
-            <li><svg class="burger-icon" width="28" height="28">
-                <use href="./img/symbol-defs.svg#icon-facebook"></use>
-              </svg></li>
-            <li><svg>
-                <use href="./img/symbol-defs.svgicon-facebook"></use>
-              </svg></li>
-            <li><svg>
-                <use href="./img/symbol-defs.svg#icon-facebook"></use>
-              </svg></li>
-          </ul>
-        </address>
-      </div>
-      <div class="mobile-menu-container">
-        <svg class="burger-icon" width="28" height="28">
-          <use href="./img/symbol-defs.svg#icon-menu"></use>
-        </svg>
         <div class="logo-container">
           <p class="logo">Mimino</p>
           <p class="logo-text">restaurant-hotel complex</p>
         </div>
+        <div class="sns-cotainer-pc">
+          <div>
+            <ul class="sns-list sns-list-menu">
+              <li class="sns-item">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sns-item">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sns-item">
+                <a href="">
+                  <svg width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="mobile-menu-container">
+      <button class="button-modal js-open-menu">
+        <svg class="burger-icon" width="28" height="28">
+          <use href="./img/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="logo-container">
+        <p class="logo">Mimino</p>
+        <p class="logo-text">restaurant-hotel complex</p>
+      </div>
+      <div class="sns-cotainer-header">
+        <div>
+          <ul class="sns-list sns-list-menu">
+            <li class="sns-item">
+              <a href="">
+                <svg width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sns-item">
+              <a href="">
+                <svg width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sns-item">
+              <a href="">
+                <svg width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     </div>
   </header>
 
@@ -64,23 +108,25 @@
       <div class="container">
         <div class="hero-container">
           <h1 class="title-hero">Mimino</h1>
-          <div class="button-container">
-            <button type="submit" class="button">Book a room</button>
-            <button type="submit" class="button">Book a table</button>
+          <div class="hero-wrappet-container">
+            <div class="button-container button-container-hero">
+              <button type="submit" class="button" data-modal-room-open>Book a room</button>
+              <button type="submit" class="button" data-modal-table-open>Book a table</button>
+            </div>
+            <ul class="hero-list">
+              <li>
+                <p>Whether you're in the mood for a hearty breakfast, a light lunch, or a <i>romantic
+                    dinner,</i> our menu has
+                  something for
+                  everyone.</p>
+              </li>
+              <li>
+                <p>At Hotel Mimino, <i>we believe</i> that great food should be available to everyone,
+                  no
+                  matter the time of day.
+                </p>
+              </li>
           </div>
-          <ul class="hero-list">
-            <li>
-              <p class="text.hero">Whether you're in the mood for a hearty breakfast, a light lunch, or a <i>romantic
-                  dinner,</i> our menu has
-                something for
-                everyone.</p>
-            </li>
-            <li>
-              <p class="text.hero">At Hotel Mimino, <i>we believe</i> that great food should be available to everyone,
-                no
-                matter the time of day.
-              </p>
-            </li>
           </ul>
         </div>
       </div>
@@ -90,69 +136,114 @@
     <section class="section section-about">
       <div class="container">
         <h2 class="visually-hidden">About hotel</h2>
-        <div class="about-wrap">
-          <img class="about-image" src="./img/about-us-1-1.jpg" alt="">
-          <div class="feedback-block">
-            <img class="image-first-reviewer" src="./img/Maria-photo.png" alt="Feedback">
-            <div>
-              <p class="about-reviewer">Maria</p>
-              <p class="about-rating">give rating <span>4.5</span></p>
+        <div class="aboult-block">
+          <div class="about-wrap">
+            <img class="about-image" src="./img/about-us-1-1-335@1.jpg" alt="" width="335" height="442">
+            <div class="feedback-block">
+              <img class="image-first-reviewer" src="./img/Maria-photo.png" alt="Feedback">
+              <div>
+                <p class="about-reviewer">Maria</p>
+                <p class="about-rating">gi6ve rating <span>4.5</span></p>
+              </div>
             </div>
+            <img src="./img/about-us-1-2-282@1.jpg" alt="" width="282" height="153">
           </div>
-          <img src="./img/about-us-1-2.jpg" alt="">
-        </div>
-        <p class="above-text">Restaurant-hotel complex</p>
-        <div class="about-text-container">
-          <p class="text">Indulge in a taste of luxury with every bite at Hotel Mimino. From the freshest seafood to
-            the most succulent
-            steaks,
-            every dish is crafted with care to ensure that you enjoy a truly memorable dining experience.</p>
-          <p class="text">Treat yourself to a taste of the good life and come dine with us today!</p>
-        </div>
-        <div class="about-wrap">
-          <img class="about-second-image" src="./img/about-us-2-1.png" alt="">
-          <div class="feedback-block feedback-second-block">
-            <img class="image-first-reviewer" src="./img/alex-photo.png" alt="Feedback">
-            <div>
-              <p class="about-reviewer">Maria</p>
-              <p class="about-rating">give rating <span>4.5</span></p>
+          <div>
+            <p class="above-text">Restaurant-hotel complex</p>
+            <div class="about-text-container">
+              <p class="text">Indulge in a taste of luxury with every bite at Hotel Mimino. From the freshest seafood to
+                the most succulent
+                steaks,
+                every dish is crafted with care to ensure that you enjoy a truly memorable dining experience.</p>
+              <p class="text">Treat yourself to a taste of the good life and come dine with us today!</p>
             </div>
           </div>
         </div>
-        <p class="above-text">business class hotel</p>
-        <p class="text about-text">The Mimino hotel features spacious and stylish double luxury rooms with
-          modern amenities
-          for a comfortable
-          stay.</p>
-        <img src="./img/about-us-2-2.jpg" alt="">
+        <div class="about-block about-second-wrap">
+          <div class="about-wrap">
+            <img class="about-second-image" src="./img/about-us-2-1-335@1.jpg" alt="" width="335" height="311">
+            <div class="feedback-block feedback-second-block">
+              <img class="image-first-reviewer" src="./img/alex-photo.png" alt="Feedback">
+              <div>
+                <p class="about-reviewer">Maria</p>
+                <p class="about-rating">give rating <span>4.5</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="about-buisness-container">
+            <div>
+              <p class="above-text">business class hotel</p>
+              <p class="text about-text">The Mimino hotel features spacious and stylish double luxury rooms with
+                modern amenities
+                for a comfortable
+                stay.</p>
+            </div>
+            <img src="./img/about-us-2-2-335@1.jpg" alt="" width="335" height="309">
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Restaurant -->
-    <section class="section">
-      <div class="container">
-        <h2 class="title">Restaurant</h2>
-        <p class="text restaurant-text">Relax and unwind with our delicious offerings, available any time of day.</p>
+    <section class="">
+      <div class="container-r restaurant-main-container">
+        <div class="restaurant-container">
+          <h2 class="title">Restaurant</h2>
+          <p class="text restaurant-text">Relax and unwind with our delicious offerings, available any time of day.</p>
+        </div>
         <div class="swiper swiper-restaurant">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
-              <img src="./img/restourant-1.jpg" alt="">
+              <img srcset="./img/restourant-1-157@1.jpg 157w,
+              ./img/restourant-1-266@1.jpg 266w,
+              ./img/restourant-1-336@1.jpg 336w,
+              ./img/restourant-1-157@2.jpg 314w,
+              ./img/restourant-1-266@1.jpg 532w,
+              ./img/restourant-1-336@1.jpg 672w"
+                sizes="(max-width: 768px) 157px, (min-width: 768px) 336px, (min-width: 1200px) 266px"
+                src="./img/restourant-1-157@1.jpg" alt="" width="157" height="201">
             </li>
             <li class="swiper-slide">
-              <img src="./img/restourant-1.jpg" alt="">
+              <img srcset="./img/restourant-2-157@1.jpg 157w,
+              ./img/restourant-2-266@1.jpg 266w,
+              ./img/restourant-2-336@1.jpg 336w,
+              ./img/restourant-2-157@2.jpg 314w,
+              ./img/restourant-2-266@1.jpg 532w,
+              ./img/restourant-2-336@1.jpg 672w"
+                sizes="(max-width: 768px) 157px, (min-width: 768px) 336px, (min-width: 1200px) 266px"
+                src="./img/restourant-2-157@1.jpg" alt="" width="157" height="201">
             </li>
             <li class="swiper-slide">
-              <img src="./img/restourant-1.jpg" alt="">
+              <img srcset="./img/restourant-3-266@1.jpg 157w,
+              ./img/restourant-3-266@1.jpg 266w,
+              ./img/restourant-3-266@1.jpg 336w"
+                sizes=" (max-width: 768px) 157px, (min-width: 768px) 336px, (min-width: 1200px) 266px"
+                src="./img/restourant-3-157@1.jpg" alt="" width="157" height="201">
             </li>
             <li class="swiper-slide">
-              <img src="./img/restourant-1.jpg" alt="">
+              <img srcset="./img/restourant-4-266@1.jpg 157w,
+              ./img/restourant-4-266@1.jpg 266w,
+              ./img/restourant-4-266@1.jpg 336w"
+                sizes=" (max-width: 768px) 157px, (min-width: 768px) 336px, (min-width: 1200px) 266px"
+                src="./img/restourant-4-157@1.jpg" alt="" width="157" height="201">
             </li>
             <li class="swiper-slide">
-              <img src="./img/restourant-1.jpg" alt="">
+              <img srcset="./img/restourant-5-266@1.jpg 157w,
+              ./img/restourant-5-266@1.jpg 266w,
+              ./img/restourant-5-266@1.jpg 336w"
+                sizes=" (max-width: 768px) 157px, (min-width: 768px) 336px, (min-width: 1200px) 266px"
+                src="./img/restourant-5-157@1.jpg" alt="" width="157" height="201">
+            </li>
+            <li class="swiper-slide">
+              <img srcset="./img/restourant-3-266@1.jpg 157w,
+              ./img/restourant-3-266@1.jpg 266w,
+              ./img/restourant-3-266@1.jpg 336w"
+                sizes=" (max-width: 768px) 157px, (min-width: 768px) 336px, (min-width: 1200px) 266px"
+                src="./img/restourant-3-157@1.jpg" alt="" width="157" height="201">
             </li>
           </ul>
           <div class="swiper-button-prev">
-            <div class="icon-wrapper"><svg class="icon-button-prev">
+            <div class="icon-wrapper icon-wrapper-prev"><svg class="icon-button-prev">
                 <use href="./img/symbol-defs.svg#icon-button-prev"></use>
               </svg></div>
           </div>
@@ -164,7 +255,7 @@
             </div>
           </div>
         </div>
-        <div class="button-container">
+        <div class="button-container button-restaurant">
           <button type="submit" class="button button-dark">Book a table</button>
           <button type="submit" class="button button-dark">View the menu</button>
         </div>
@@ -172,57 +263,94 @@
     </section>
 
     <!-- About hotel -->
-    <section class="section">
-      <div class="container">
-        <h2 class="visually-hidden">About hotel</h2>
-        <img src="" alt="">
-        <h3 class="title title-hotel">Welcome to the epitome of <i>luxury</i> and <i>comfort</i></h3>
-        <div class="text-hotel-container">
-          <p class="text">Our hotel rooms are elegantly designed with an eye for detail, ensuring that you have
-            everything you need for
-            a
-            relaxing
-            and rejuvenating stay.</p>
-          <p class="text">Each room is equipped with the latest amenities, including plush bedding, high-speed
-            Wi-Fi, flat-screen TVs,
-            and a
-            coffee maker to help you start your day right. Our spacious bathrooms feature luxurious toiletries and
-            towels,
-            so you
-            can pamper yourself in complete privacy.</p>
+    <section class="section-about">
+      <div class="container hotel-container">
+        <div class="text-hotel-wrapper">
+          <h2 class="visually-hidden">About hotel</h2>
+          <h3 class="title-hotel">Welcome to the epitome&nbspof <i>luxury</i> and <i>comfort</i></h3>
+          <div class="text-hotel-container">
+            <p class="text text-hotel">Our hotel rooms are elegantly designed with an eye for detail, ensuring that you
+              have
+              everything you need for
+              a
+              relaxing
+              and rejuvenating stay.</p>
+            <p class="text">Each room is equipped with the latest amenities, including plush bedding, high-speed
+              Wi-Fi, flat-screen TVs,
+              and a
+              coffee maker to help you start your day right. Our spacious bathrooms feature luxurious toiletries and
+              towels,
+              so you
+              can pamper yourself in complete privacy.</p>
+          </div>
         </div>
-        <img src="./img/about-hotel.jpg" width=" 704px" ; alt="" width="335px">
+        <img srcset="./img/about-hotel-335@1.jpg 335w,
+        ./img/about-hotel-704@1.jpg 704w,
+        ./img/about-hotel-672@1.jpg 672w,"
+          sizes="(max-width: 767px) 335px, (min-width: 768px) and (max-width: 1199px) 704px, (min-width: 1200px) 672px"
+          src="./img/about-hotel-335@1.jpg" alt="">
       </div>
     </section>
 
     <!-- Booking -->
-    <section class="section section-dark">
-      <div class="container booking-container">
+    <section class="section-dark booking-section">
+      <div class="container">
         <h2 class="visually-hidden">Booking</h2>
-        <h3 class="title">Hotel</h3>
-        <p class="text booking-text">Book your stay with us now and experience the epitome of comfort and luxury at our
-          hotel.
-          We guarantee you'll
-          be
-          thrilled with your decision.</p>
-        <img src="./img/hotel-badroom.jpg" alt="">
-        <div class="swiper swiper-s">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <img src="./img/hotel-bathroom-1.jpg" alt="">
+        <div class="booking-info-container">
+          <h3 class="title">Hotel</h3>
+          <p class="text booking-text">Book your stay with us now and experience the epitome of comfort and luxury at
+            our
+            hotel.
+            We guarantee you'll
+            be
+            thrilled with your decision.</p>
+        </div>
+        <div class="hotel-pc-container">
+          <ul class="hotel-image-list">
+            <div class="side-image-block">
+              <li class="">
+                <img srscet="./img/hotel-bathroom-1-158@1.jpg 158w,
+                            ./img/hotel-bathroom-1-1-176@1.jpg 176w,
+                               ./img/hotel-bathroom-1-1-320@1.jpg 320w
+                            "
+                  sizes="(max-width: 767px) 158px, (min-width: 768px) and (max-width: 1199px) 176px, (min-width: 1200px) 320px"
+                  src="./img/hotel-bathroom-1-158@1.jpg" alt="" width="176" height="143">
+              </li>
+              <li class="">
+                <img srscet="./img/hotel-bathroom-1-2-158@1.jpg 158w,
+                            ./img/hotel-bathroom-1-2-176@1.jpg 176w,
+                            ./img/hotel-bathroom-1-2-320@1.jpg 320w
+                            "
+                  sizes="(max-width: 767px) 158px, (min-width: 768px) and (max-width: 1199px) 176px, (min-width: 1200px) 320px"
+                  src="./img/hotel-bathroom-2-158@1.jpg" alt="" width="176" height="258">
+              </li>
+            </div>
+            <li class="">
+              <img srcet="./img/hotel-badroom-335@1.jpg 335w,
+                          ./img/hotel-badroom-320@1.jpg 320w,
+                          ./img/hotel-badroom-420@1.jpg 420w,
+                          "
+                sizes="(max-width: 767px) 335px, (min-width: 768px) and (max-width: 1199px) 320px, (min-width: 1200px) 420px"
+                src="./img/hotel-badroom-335@1.jpg" alt="" width="320" height="417">
             </li>
-            <li class="swiper-slide">
-              <img src="./img/hotel-bathroom-2.jpg" alt="">
-            </li>
-            <li class="swiper-slide">
-              <img src="./img/hotel-bathroom-1.jpg" alt="">
-            </li>
-            <li class="swiper-slide">
-              <img src="./img/hotel-bathroom-2.jpg" alt="">
-            </li>
-            <li class="swiper-slide">
-              <img src="./img/hotel-bathroom-1.jpg" alt="">
-            </li>
+            <div class="side-image-block">
+              <li class="">
+                <img srscet="./img/hotel-bathroom-1-158@1.jpg 158w,
+                                        ./img/hotel-bathroom-1-1-176@1.jpg 176w,
+                                           ./img/hotel-bathroom-1-1-320@1.jpg 320w
+                                        "
+                  sizes="(max-width: 767px) 158px, (min-width: 768px) and (max-width: 1199px) 176px, (min-width: 1200px) 320px"
+                  src="./img/hotel-bathroom-1-158@1.jpg" alt="" width="176" height="258">
+              </li>
+              <li class="">
+                <img srscet="./img/hotel-bathroom-1-2-158@1.jpg 158w,
+                                        ./img/hotel-bathroom-1-2-176@1.jpg 176w,
+                                        ./img/hotel-bathroom-1-2-320@1.jpg 320w
+                                        "
+                  sizes="(max-width: 767px) 158px, (min-width: 768px) and (max-width: 1199px) 176px, (min-width: 1200px) 320px"
+                  src="./img/hotel-bathroom-2-158@1.jpg" alt="" width="176" height="143">
+              </li>
+            </div>
           </ul>
           <div class="swiper-button-prev">
             <div class="icon-wrapper">
@@ -240,53 +368,278 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </div>
-        <div class="button-container-hotel">
-          <button type="submit" class="button">Book a room</button>
-          <button type="submit" class="button">View rooms</button>
+      </div>
+      <div class="hotel-mobile-container">
+        <div class="container">
+          <img src="./img/hotel-badroom-335@1.jpg" alt="">
+          <div class="swiper swiper-s">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="./img/hotel-bathroom-1-158@1.jpg" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./img/hotel-bathroom-2-158@1.jpg" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./img/hotel-bathroom-1-158@1.jpg" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./img/hotel-bathroom-2-158@1.jpg" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="./img/hotel-bathroom-1-158@1.jpg" alt="">
+              </li>
+            </ul>
+            <div class="swiper-button-prev">
+              <div class="icon-wrapper">
+                <svg class="icon-button-prev icon-button-ligth">
+                  <use href="./img/symbol-defs.svg#icon-button-prev"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <div class="icon-wrapper icon-wrapper-next">
+                <svg class="icon-button-next icon-button-ligth">
+                  <use href="./img/symbol-defs.svg#icon-button-next"></use>
+                </svg>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="button-container-hotel">
+        <button type="submit" class="button">Book a room</button>
+        <button type="submit" class="button">View rooms</button>
+      </div>
       </div>
     </section>
 
     <!-- Location -->
     <section class="section section-location">
-      <div class="container">
-        <h2 class="title">Location</h2>
+      <div class="container container-location">
+        <h2 class="title title-location">Location</h2>
         <div class="frame">
           <iframe class="frame-map" max-width="335px" height="384px" style="border: 0;"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10989.729677347106!2d30.7336159!3d46.4797494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc41cc58027fe9b7!2sInweb!5e0!3m2!1sru!2sua!4v1603444441494!5m2!1sru!2sua"
             frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false" tabindex="0"></iframe>
           <address>
         </div>
-        <div class="local-address-container">
-          <address>
+        <address>
+          <div class="local-address-container">
             <p class="text text-address">Ukraine, Poltava,
               St.&nbsp;Marshal&nbsp;Biryuzov,&nbsp;15</p>
-          </address>
-        </div>
+            <div class="address-wrapper">
+              <p class="text title-address-numbers">call us:</p>
+              <ul class="list-address">
+                <li><a href="tel:0955559533">(095) 555 95 33</a></li>
+                <li><a href="tel:0668491089">(066) 849 10 89</a></li>
+            </div>
+            </ul>
+          </div>
+        </address>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div class="mobile-menu-container">
-        <nav>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Hotel</a></li>
-            <li><a href="">Restaurant</a></li>
+      <div class="footer-container">
+        <div class="footer-menu-container">
+          <nav class=".pc-footer-navigation">
+            <ul class="pc-menu-list footer-menu-list">
+              <li><a href="">Home</a></li>
+              <li><a href="">Hotel</a></li>
+              <li><a href="">Restaurant</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="logo-footer-container">
+          <p class="logo logo-dark">Mimino</p>
+          <p class="logo-text logo-text-dark">restaurant-hotel complex</p>
+        </div>
+        <div class="sns-cotainer">
+          <ul class="sns-list">
+            <li class="sns-item">
+              <a href="">
+                <svg width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sns-item">
+              <a href="">
+                <svg width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sns-item">
+              <a href="">
+                <svg width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
-        <div class="logo">
-          <p>Mimino</p>
-          <p>restaurant-hotel complex</p>
         </div>
       </div>
     </div>
   </footer>
+  <!-- Menu Mobile Modal-->
+  <div class="modal-mobile-menu js-menu-container">
+    <div class="">
+      <div class="modal-menu-header">
+        <div class="container">
+          <div class="mobile-menu-container">
+            <button class="button-modal js-close-menu" type="button">
+              <svg class="burger-icon" width="28" height="28">
+                <use href="./img/symbol-defs.svg#icon-x-close"></use>
+              </svg>
+            </button>
+            <div class="logo-container">
+              <p class="logo">Mimino</p>
+              <p class="logo-text">restaurant-hotel complex</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-modal-navigation">
+        <div class="container">
+          <ul class="modal-menu-list">
+            <l class="text-address-menu text-light"><a href="">Home</a></l>
+            <l class="text-address-menu text-light"><a href="">Hotel</a></l>
+            <l class="text-address-menu text-light"><a href="">Restaurant</a></l>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sns-modal-cotainer">
+      <div class="container">
+        <ul class="sns-list sns-list-menu">
+          <li class="sns-item">
+            <a href="">
+              <svg width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sns-item">
+            <a href="">
+              <svg width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sns-item">
+            <a href="">
+              <svg width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Book a room -->
+  <div class="backdrop is-hidden" data-modal-room>
+    <div class="modal-room">
+      <h2 class="title title-modal">Book <i>a room</i></h2>
+      <button class="button-close-modal" type="button" data-modal-room-close>
+        <svg class="burger-icon" width="28" height="28">
+          <use href="./img/symbol-defs.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <form name="form-room">
+        <div class="form-modal-room">
+          <div class="form-field-room">
+            <label class="label-modal-room" for="name-user">Who should book a table for?</label>
+            <input class="input-form" type="text" pattern="[A-Za-zА-Яа-яЁё]{2,}\s[A-Za-zА-Яа-яЁё]{2,}"
+              title="example John Doe" id="name-user" name="name" autocomplete=off placeholder="YOUR NAME">
+          </div>
+          <div class="form-field-room">
+            <label class="label-modal-room" for="number-user">Phone number</label>
+            <input class="input-form" type="tel" pattern="[+] [3][8] [(][0-9]{3}[)] [0-9]{7}" placeholder="+ 38 ()"
+              title="example + 38 (000) 0000000" id="number-user" name="number" autocomplete=off>
+          </div>
+
+          <div class="form-field-room form-field-select">
+            <label class="label-modal-room " for="check-in-date">Check-in date</label>
+            <input type="date" id="check-in-date" name="check-in" autocomplete=off>
+          </div>
+          <div class="form-field-room">
+            <label class="label-modal-room form-field-select" for="check-out-date">Check-out date</label>
+            <input type="date" id="check-out-date" name="check-out" autocomplete=off>
+          </div>
+          <div class="form-field-room">
+            <label class="label-modal-room form-field-select" for="number-category">Number category</label>
+            <select name="number-category" id="number-category">
+              <option value="number">Double suite</option>
+              <option value="number">Single suite</option>
+              <option value="number">Residence Hall</option>
+              <option value="number">Broke room</option>
+            </select>
+          </div>
+        </div>
+        <button class="button button-modal-room" type="submit">MAKE A RESERVATION</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Table a room -->
+  <div class="backdrop is-hidden" data-modal-table>
+    <div class="modal-room madal-table">
+      <h2 class="title title-modal">Book <i>a table</i></h2>
+      <button class="button-close-modal" type="button" data-modal-table-close>
+        <svg class="burger-icon" width="28" height="28">
+          <use href="./img/symbol-defs.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <form name="form-table">
+        <div class="form-modal-room">
+          <div class="form-field-room">
+            <label class="label-modal-room" for="name-user-table">Who should book a table for?</label>
+            <input class="input-form" type="text" pattern="[A-Za-zА-Яа-яЁё]{2,}\s[A-Za-zА-Яа-яЁё]{2,}"
+              title="example John Doe" id="name-user-table" name="name" autocomplete=off placeholder="YOUR NAME">
+          </div>
+
+          <div class="form-field-room form-field-select">
+            <label class="label-modal-room form-field-select visually-hidden" for="number-people"
+              placeholder="fdsfds">Number
+              category</label>
+            <select name="number-people" id="number-category">
+              <option value="number" disabled selected>NUMBER OF PEOPLE</option>
+              <option value="number">1-2</option>
+              <option value="number">3-5</option>
+              <option value="number">6-10</option>
+              <option value="number">More</option>
+            </select>
+          </div>
+
+          <div class="form-field-room form-field-select">
+            <label class="label-modal-room" for="check-out-date">Check-out date</label>
+            <input type="date" id="check-out-date" name="check-out" autocomplete=off>
+          </div>
+
+          <div class="form-field-room">
+            <label class="label-modal-room" for="number-user">Phone number</label>
+            <input class="input-form" type="tel" pattern="[+] [3][8] [(][0-9]{3}[)] [0-9]{7}" placeholder="+ 38 ()"
+              title="example + 38 (000) 0000000" id="number-user" name="number" autocomplete=off>
+          </div>
+        </div>
+        <button class="button button-modal-room" type="submit">MAKE A RESERVATION</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./script-swiper.js"></script>
+  <script src="./mobile-menu.js"></script>
+  <script src="./multi-moda.js"></script>
 </body>
 
 </html>

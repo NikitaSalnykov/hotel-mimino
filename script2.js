@@ -2,17 +2,9 @@
 const swiper = new Swiper('.swiper-restaurant', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
-  spaceBetween: 5,
+  loop: false,
+  spaceBetween: 20,
   slidesPerView: 2,
-
-    breakpoints: {
-    // при ширине экрана больше или равной 1200px
-    1200: {
-      slidesPerView: 5,
-      spaceBetween: 32,
-    }
-  },
 
 
   // If we need pagination
