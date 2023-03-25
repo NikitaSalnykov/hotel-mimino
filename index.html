@@ -131,7 +131,6 @@
         </div>
       </div>
     </section>
-
     <!-- About hotel -->
     <section class="section section-about">
       <div class="container">
@@ -293,6 +292,7 @@
     </section>
 
     <!-- Booking -->
+
     <section class="section-dark booking-section">
       <div class="container">
         <h2 class="visually-hidden">Booking</h2>
@@ -309,46 +309,40 @@
           <ul class="hotel-image-list">
             <div class="side-image-block">
               <li class="">
-                <img srscet="./img/hotel-bathroom-1-158@1.jpg 158w,
-                            ./img/hotel-bathroom-1-1-176@1.jpg 176w,
-                               ./img/hotel-bathroom-1-1-320@1.jpg 320w
-                            "
-                  sizes="(max-width: 767px) 158px, (min-width: 768px) and (max-width: 1199px) 176px, (min-width: 1200px) 320px"
-                  src="./img/hotel-bathroom-1-158@1.jpg" alt="" width="176" height="143">
+                <picture>
+                  <source media="(max-width: 1199px)" srcset="./img/hotel-bathroom-1-176@1.jpg" />
+                  <source media="(min-width: 1199px)" srcset="./img/hotel-bathroom-1-320@1.jpg " />
+                  <img src="./img/hotel-bathroom-1-320@1.jpg" alt="" />
+                </picture>
               </li>
               <li class="">
-                <img srscet="./img/hotel-bathroom-1-2-158@1.jpg 158w,
-                            ./img/hotel-bathroom-1-2-176@1.jpg 176w,
-                            ./img/hotel-bathroom-1-2-320@1.jpg 320w
-                            "
-                  sizes="(max-width: 767px) 158px, (min-width: 768px) and (max-width: 1199px) 176px, (min-width: 1200px) 320px"
-                  src="./img/hotel-bathroom-2-158@1.jpg" alt="" width="176" height="258">
+                <picture>
+                  <source media="(max-width: 1199px)" srcset="./img/hotel-bathroom-1-2-176@1.jpg" />
+                  <source media="(min-width: 1199px)" srcset="./img/hotel-bathroom-2-320@1.jpg" />
+                  <img src="./img/hotel-bathroom-2-320@1.jpg" alt="" />
+                </picture>
               </li>
             </div>
             <li class="">
-              <img srcet="./img/hotel-badroom-335@1.jpg 335w,
-                          ./img/hotel-badroom-320@1.jpg 320w,
-                          ./img/hotel-badroom-420@1.jpg 420w,
-                          "
-                sizes="(max-width: 767px) 335px, (min-width: 768px) and (max-width: 1199px) 320px, (min-width: 1200px) 420px"
-                src="./img/hotel-badroom-335@1.jpg" alt="" width="320" height="417">
+              <picture>
+                <source media="(max-width: 1199px)" srcset="./img/hotel-badroom-320@1.jpg" />
+                <source media="(min-width: 1199px)" srcset="./img/hotel-badroom-420@1.jpg" />
+                <img src="./img/hotel-badroom-420@1.jpg" alt="" />
+              </picture>
             </li>
             <div class="side-image-block">
               <li class="">
-                <img srscet="./img/hotel-bathroom-1-158@1.jpg 158w,
-                                        ./img/hotel-bathroom-1-1-176@1.jpg 176w,
-                                           ./img/hotel-bathroom-1-1-320@1.jpg 320w
-                                        "
-                  sizes="(max-width: 767px) 158px, (min-width: 768px) and (max-width: 1199px) 176px, (min-width: 1200px) 320px"
-                  src="./img/hotel-bathroom-1-158@1.jpg" alt="" width="176" height="258">
-              </li>
+                <picture>
+                  <source media="(max-width: 1199px)" srcset="./img/hotel-bathroom-3-176@1.jpg" />
+                  <source media="(min-width: 1200px)" srcset="./img/hotel-bathroom-3-320@1.jpg" />
+                  <img src="./img/hotel-bathroom-3-320@1.jpg" alt="" />
+                </picture>
               <li class="">
-                <img srscet="./img/hotel-bathroom-1-2-158@1.jpg 158w,
-                                        ./img/hotel-bathroom-1-2-176@1.jpg 176w,
-                                        ./img/hotel-bathroom-1-2-320@1.jpg 320w
-                                        "
-                  sizes="(max-width: 767px) 158px, (min-width: 768px) and (max-width: 1199px) 176px, (min-width: 1200px) 320px"
-                  src="./img/hotel-bathroom-2-158@1.jpg" alt="" width="176" height="143">
+                <picture>
+                  <source media="(max-width: 1199px)" srcset="./img/hotel-bathroom-4-176@1.jpg" />
+                  <source media="(min-width: 1200px)" srcset="./img/hotel-bathroom-4-320@1.jpg" />
+                  <img src="./img/hotel-bathroom-4-320@1.jpg" alt="" />
+                </picture>
               </li>
             </div>
           </ul>

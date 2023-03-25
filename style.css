@@ -566,6 +566,7 @@ z-index: 1;
 @media screen and (min-width: 1200px) {
   .about-text-container {max-width: 530px;}
 }
+
 .feedback-second-block {
     left: 0px;
       top: 32%;
@@ -582,12 +583,16 @@ z-index: 1;
 left: 70px;
   top: 60%;
     }
+
+    .feedback-second-block {
+left: -25%;
+  top: 60%;
+    }
   }
 
 @media screen and (max-width: 1200px) {
 .about-second-image{
   margin-bottom: 54px;
-
 }}
 
 @media screen and (max-width: 768px) {
@@ -684,8 +689,12 @@ min-width: 263px;}
   margin-bottom: 40px;
 }
 
-.swiper-s,
-.swiper-restaurant {
+@media screen and (max-width: 768px) {
+  .swiper-s {
+margin-top: 27px;
+  }}
+
+.swiper-s {
   width: 100%;
   margin-bottom: 40px;
 }
@@ -759,6 +768,14 @@ width: 336px;
   position: static;
 }
 
+@media screen and (min-width: 1200px) {
+.swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+    position: static;
+  }
+  }
+
 .icon-wrapper {
     width: 24px;
       height: 24px;
@@ -821,6 +838,7 @@ left: calc(45% + 54px);
   .hotel-container {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: start;
   }
 .text-hotel-wrapper{
   display: flex;
